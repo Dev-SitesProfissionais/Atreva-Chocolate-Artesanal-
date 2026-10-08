@@ -1,137 +1,42 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-
-    <!-- ========================================
-         CONFIGURAÇÕES
-    ========================================= -->
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="description" content="ATREVA — Chocolate artesanal. Atreva-se a provar.">
+    <meta name="keywords" content="ATREVA, chocolate artesanal, chocolate, doces, presentes">
+    <meta name="author" content="ATREVA">
+    <meta name="theme-color" content="#0d0d0d">
 
-    <meta
-        name="description"
-        content="ATREVA — Chocolate artesanal. Atreva-se a provar."
-    >
+    <meta property="og:title" content="ATREVA — Atreva-se a provar">
+    <meta property="og:description" content="Chocolate artesanal para quem tem coragem de experimentar.">
+    <meta property="og:type" content="website">
 
-    <meta
-        name="keywords"
-        content="ATREVA, chocolate artesanal, chocolate, doces, presentes"
-    >
+    <title>ATREVA — Atreva-se a provar</title>
 
-    <meta
-        name="author"
-        content="ATREVA"
-    >
-
-    <meta
-        name="theme-color"
-        content="#0d0d0d"
-    >
-
-
-    <!-- ========================================
-         OPEN GRAPH
-    ========================================= -->
-
-    <meta
-        property="og:title"
-        content="ATREVA — Atreva-se a provar"
-    >
-
-    <meta
-        property="og:description"
-        content="Chocolate artesanal para quem tem coragem de experimentar."
-    >
-
-    <meta
-        property="og:type"
-        content="website"
-    >
-
-
-    <!-- ========================================
-         TÍTULO
-    ========================================= -->
-
-    <title>
-        ATREVA — Atreva-se a provar
-    </title>
-
-
-    <!-- ========================================
-         GOOGLE FONTS
-    ========================================= -->
-
-    <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com"
-    >
-
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
         rel="stylesheet"
     >
 
-
-    <!-- ========================================
-         CSS
-    ========================================= -->
-
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
-
+    <link rel="stylesheet" href="./style.css">
 </head>
-
 
 <body>
 
-
-    <!-- ========================================
-         HEADER
-    ========================================= -->
-
-    <header
-        class="header"
-        id="header"
-    >
-
+    <!-- CABEÇALHO -->
+    <header class="header" id="header">
         <div class="container header__container">
 
-
-            <!-- LOGO -->
-
-            <a
-                href="#inicio"
-                class="brand"
-                aria-label="ATREVA — início"
-            >
-
-                <span class="brand__name">
-                    ATREVA
-                </span>
-
-                <span class="brand__tagline">
-                    Atreva-se a provar
-                </span>
-
+            <a href="#inicio" class="brand" aria-label="ATREVA — início">
+                <span class="brand__name">ATREVA</span>
+                <span class="brand__tagline">Atreva-se a provar</span>
             </a>
-
-
-            <!-- MENU MOBILE -->
 
             <button
                 class="menu-toggle"
@@ -141,82 +46,34 @@
                 aria-expanded="false"
                 aria-controls="mainNav"
             >
-
                 <span></span>
                 <span></span>
                 <span></span>
-
             </button>
 
-
-            <!-- NAVEGAÇÃO -->
-
-            <nav
-                class="nav"
-                id="mainNav"
-                aria-label="Navegação principal"
-            >
-
-                <a
-                    href="#inicio"
-                    class="nav__link active"
-                >
-                    Início
-                </a>
-
-                <a
-                    href="#chocolates"
-                    class="nav__link"
-                >
-                    Chocolates
-                </a>
-
-                <a
-                    href="#atreva"
-                    class="nav__link"
-                >
-                    Nossa história
-                </a>
-
-                <a
-                    href="#contato"
-                    class="nav__link"
-                >
-                    Contato
-                </a>
+            <nav class="nav" id="mainNav" aria-label="Navegação principal">
+                <a href="#inicio" class="nav__link active">Início</a>
+                <a href="#chocolates" class="nav__link">Chocolates</a>
+                <a href="#atreva" class="nav__link">Nossa história</a>
+                <a href="#contato" class="nav__link">Contato</a>
 
                 <a
                     href="https://www.instagram.com/direct/t/18129300235674569/"
                     class="button button--small"
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
                     Comprar
                 </a>
-
             </nav>
 
         </div>
-
     </header>
-
-
-
-    <!-- ========================================
-         CONTEÚDO PRINCIPAL
-    ========================================= -->
 
     <main>
 
-
-        <!-- ========================================
-             HERO
-        ========================================= -->
-
-        <section
-            class="hero"
-            id="inicio"
-        >
-
-            <!-- VÍDEO DE FUNDO -->
+        <!-- HERO -->
+        <section class="hero" id="inicio">
 
             <video
                 class="hero__video"
@@ -225,82 +82,42 @@
                 loop
                 playsinline
                 preload="auto"
+                aria-hidden="true"
             >
-
-                <source
-                    src="./assets/videos/hero-video.mp4"
-                    type="video/mp4"
-                >
-
+                <source src="./hero-video.mp4" type="video/mp4">
             </video>
-
-
-            <!-- CAMADA ESCURA -->
 
             <div class="hero__overlay"></div>
 
-
-            <!-- CONTEÚDO -->
-
             <div class="container hero__container">
-
                 <div class="hero__content">
 
-                    <span class="eyebrow">
-                        Chocolate artesanal
-                    </span>
-
+                    <span class="eyebrow">Chocolate artesanal</span>
 
                     <h1 class="hero__title">
-
                         Atreva-se
-
-                        <span>
-                            a provar.
-                        </span>
-
+                        <span>a provar.</span>
                     </h1>
 
-
                     <p class="hero__description">
-
-                        Para quem tem coragem
-                        de experimentar algo novo.
-
+                        Para quem tem coragem de experimentar algo novo.
                     </p>
 
-
                     <div class="hero__actions">
-
-                        <a
-                            href="#chocolates"
-                            class="button button--primary"
-                        >
+                        <a href="#chocolates" class="button button--primary">
                             Descobrir chocolates
                         </a>
 
-
-                        <a
-                            href="#atreva"
-                            class="button button--outline"
-                        >
+                        <a href="#atreva" class="button button--outline">
                             Conheça a nossa história
                         </a>
-
                     </div>
 
                 </div>
-
             </div>
-
         </section>
 
-
-
-        <!-- ========================================
-             VÍDEO DOS INGREDIENTES
-        ========================================= -->
-
+        <!-- VÍDEO DOS INGREDIENTES -->
         <section class="ingredients-video">
 
             <video
@@ -310,64 +127,35 @@
                 loop
                 playsinline
                 preload="auto"
+                aria-hidden="true"
             >
-
-                <source
-                    src="./assets/videos/ingredientes-video.mp4"
-                    type="video/mp4"
-                >
-
+                <source src="./ingredientes-video.mp4" type="video/mp4">
             </video>
-
 
             <div class="ingredients-video__overlay"></div>
 
-
             <div class="ingredients-video__content">
-
                 <span class="eyebrow">
                     Ingredientes que fazem a diferença
                 </span>
 
-
                 <h2>
-
                     O sabor começa
-
                     <br>
-
-                    <em>
-                        na escolha.
-                    </em>
-
+                    <em>na escolha.</em>
                 </h2>
 
-
                 <p>
-
                     Nozes, castanhas, frutas secas e ingredientes
                     selecionados para transformar cada mordida
                     em uma experiência.
-
                 </p>
-
             </div>
 
         </section>
 
-
-
-        <!-- ========================================
-             A PARTIR DAQUI:
-             VÍDEO ATREVA ATÉ O FINAL
-        ========================================= -->
-
+        <!-- VÍDEO CONTÍNUO DA HISTÓRIA ATÉ O RODAPÉ -->
         <div class="video-page">
-
-
-            <!-- ========================================
-                 VÍDEO DE FUNDO DA PÁGINA
-            ========================================= -->
 
             <video
                 class="video-page__background"
@@ -376,230 +164,117 @@
                 loop
                 playsinline
                 preload="auto"
+                aria-hidden="true"
             >
-
-                <source
-                    src="./assets/videos/atreva-video.mp4"
-                    type="video/mp4"
-                >
-
+                <source src="./atreva-video.mp4" type="video/mp4">
             </video>
-
-
-            <!-- CAMADA ESCURA -->
 
             <div class="video-page__overlay"></div>
 
-
-
-            <!-- ========================================
-                 HISTÓRIA DA ATREVA
-            ========================================= -->
-
-            <section
-                class="story"
-                id="atreva"
-            >
-
+            <!-- HISTÓRIA -->
+            <section class="story" id="atreva">
                 <div class="container">
 
-
-                    <!-- INTRODUÇÃO -->
-
                     <div class="story__intro">
-
-                        <span class="eyebrow">
-                            Por que ATREVA?
-                        </span>
-
+                        <span class="eyebrow">Por que ATREVA?</span>
 
                         <h2>
-
                             Uma palavra.
-
-                            <em>
-                                Uma história.
-                            </em>
-
+                            <em>Uma história.</em>
                         </h2>
-
                     </div>
-
-
-
-                    <!-- SIGNIFICADO -->
 
                     <div class="story__meaning">
-
                         <div>
+                            <span class="story__label">O significado</span>
 
-                            <span class="story__label">
-                                O significado
-                            </span>
-
-
-                            <h3>
-                                ATREVA
-                            </h3>
-
+                            <h3>ATREVA</h3>
 
                             <p>
-
-                                <strong>Atreva</strong>
-                                significa ter coragem,
-                                ousadia ou audácia para
-                                fazer algo difícil,
+                                <strong>Atreva</strong> significa ter coragem,
+                                ousadia ou audácia para fazer algo difícil,
                                 novo ou arriscado.
-
                             </p>
-
                         </div>
-
                     </div>
 
-
-
-                    <!-- HISTÓRIA PESSOAL -->
-
                     <div class="story__content">
-
                         <div class="story__quote">
 
-                            <span class="story__quote-mark">
-                                “
-                            </span>
-
+                            <span class="story__quote-mark" aria-hidden="true">“</span>
 
                             <div class="story__text">
 
-
                                 <p class="story__opening">
-
-                                   "Durante muitos anos, o meu mundo foi moldado pela timidez. Essa criança ainda vive em mim. Mas hoje, ela convive com algo muito maior: a   
-                                       <strong>
-                                        coragem.
-                                    </strong>
+                                    Durante muitos anos, o meu mundo foi
+                                    moldado pela timidez. Essa criança ainda
+                                    vive em mim. Mas hoje, ela convive com
+                                    algo muito maior: a
+                                    <strong>coragem.</strong>
                                 </p>
-
 
                                 <p>
-
-                                    Foi precisamente dessa transformação que nasceu a ATREVA. Nasceu do percurso de quem tinha medo de se mostrar ao mundo, mas decidiu experimentar, arriscar e seguir em frente.
-                                   
-
+                                    Foi precisamente dessa transformação que
+                                    nasceu a ATREVA. Nasceu do percurso de quem
+                                    tinha medo de se mostrar ao mundo, mas
+                                    decidiu experimentar, arriscar e seguir em frente.
                                 </p>
-
 
                                 <p>
-
-                                   Por isso, a ATREVA não é apenas um chocolate. É um convite para sair da sua zona de conforto, descobrir o inesperado e dar o primeiro passo. Que cada pedaço seja um lembrete diário: tenha a coragem de experimentar o novo.
-
+                                    Por isso, a ATREVA não é apenas um chocolate.
+                                    É um convite para sair da sua zona de conforto,
+                                    descobrir o inesperado e dar o primeiro passo.
+                                    Que cada pedaço seja um lembrete diário:
+                                    tenha a coragem de experimentar o novo.
                                 </p>
-
 
                                 <p>
-
-                                    ATREVA — Atreva-se a provar."
-
+                                    <strong>ATREVA — Atreva-se a provar.</strong>
                                 </p>
-
-
-                               
 
                             </div>
-
                         </div>
-
                     </div>
 
-
-
-                    <!-- ASSINATURA -->
-
                     <div class="story__final">
-
-                        <div class="story__signature">
-
-                           
-
-                        </div>
-
+                        <div class="story__signature"></div>
                     </div>
 
                 </div>
-
             </section>
 
-
-
-            <!-- ========================================
-                 CHOCOLATES
-            ========================================= -->
-
-            <section
-                class="products"
-                id="chocolates"
-            >
-
+            <!-- CHOCOLATES -->
+            <section class="products" id="chocolates">
                 <div class="container">
 
-
-                    <!-- CABEÇALHO -->
-
                     <div class="section-header">
-
                         <div>
-
-                            <span class="eyebrow">
-                                Nossa coleção
-                            </span>
-
+                            <span class="eyebrow">Nossa coleção</span>
 
                             <h2>
-
                                 Escolha sua próxima
-
-                                <em>
-                                    tentação.
-                                </em>
-
+                                <em>tentação.</em>
                             </h2>
-
                         </div>
-
-
-                        <p>
-
-                        </p>
-
+                        <p></p>
                     </div>
-
-
-
-                    <!-- PRODUTOS -->
 
                     <div class="products__grid">
 
-
-                        <!-- PRODUTO 01 -->
-
+                        <!-- CHOCOLATE AO LEITE -->
                         <article class="product-card">
 
                             <div class="product-card__image">
-
                                 <img
-                                    src="assets/images/chocolate-01.jpeg"
-                                    alt="Chocolate artesanal ATREVA Ao Leite"
+                                    src="./chocolate-01.jpeg"
+                                    alt="Chocolate artesanal ATREVA ao leite"
                                     loading="lazy"
                                 >
-
 
                                 <span class="product-card__badge">
                                     Ao Leite
                                 </span>
-
                             </div>
-
 
                             <div class="product-card__content">
 
@@ -607,62 +282,47 @@
                                     Chocolate ao leite com nozes, castanhas e frutas secas
                                 </span>
 
-
-                                <h3>
-                                    ATREVA ao Leite
-                                </h3>
-
+                                <h3>ATREVA ao Leite</h3>
 
                                 <p>
-
-                                   Uma deliciosa combinação de chocolate ao leite com nozes, castanhas e frutas secas. Delicado e equilibrado, é perfeito para quem aprecia sabores mais suaves, doces e envolventes, com menor intensidade de cacau e amargor.
-
+                                    Uma deliciosa combinação de chocolate ao
+                                    leite com nozes, castanhas e frutas secas.
+                                    Delicado e equilibrado, é perfeito para quem
+                                    aprecia sabores mais suaves, doces e
+                                    envolventes, com menor intensidade de cacau
+                                    e amargor.
                                 </p>
 
-
                                 <div class="product-card__footer">
-                                    <div class="product-card__bottom">
+                                    <div class="product-card__bottom"></div>
 
-                                    </div>
-                                     
-    
-                                        <a
-    class="add-cart"
-    href="https://www.instagram.com/direct/t/18129300235674569/"
-    target="_blank"
-    rel="noopener noreferrer"
-    data-message="Olá! Gostaria de fazer um pedido do ATREVA ao Leite."
-    aria-label="Fazer pedido do ATREVA ao Leite pelo Instagram"
->
-    +
-</a>
+                                    <a
+                                        class="add-cart"
+                                        href="https://www.instagram.com/direct/t/18129300235674569/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        data-message="Olá! Gostaria de fazer um pedido do ATREVA ao Leite."
+                                        aria-label="Fazer pedido do ATREVA ao Leite pelo Instagram"
+                                    >+</a>
                                 </div>
 
                             </div>
-
                         </article>
 
-
-
-                        <!-- PRODUTO 02 -->
-
+                        <!-- CHOCOLATE BRANCO -->
                         <article class="product-card">
 
                             <div class="product-card__image">
-
                                 <img
-                                    src="assets/images/chocolate-02.jpeg"
-                                    alt="Chocolate artesanal ATREVA Chocolate Branco"
+                                    src="./chocolate-02.jpeg"
+                                    alt="Chocolate artesanal ATREVA branco"
                                     loading="lazy"
                                 >
-
 
                                 <span class="product-card__badge">
                                     Chocolate Branco
                                 </span>
-
                             </div>
-
 
                             <div class="product-card__content">
 
@@ -670,335 +330,190 @@
                                     Chocolate branco com nozes, castanhas e frutas secas
                                 </span>
 
-
-                                <h3>
-                                    ATREVA Chocolate Branco
-                                </h3>
-
+                                <h3>ATREVA Chocolate Branco</h3>
 
                                 <p>
-
-                                     Uma combinação irresistível de chocolate branco, nozes, castanhas e frutas secas. Cremoso, delicadamente doce e com uma textura envolvente, perfeito para quem aprecia sabores suaves e marcantes, sem o amargor característico do cacau.
-
+                                    Uma combinação irresistível de chocolate
+                                    branco, nozes, castanhas e frutas secas.
+                                    Cremoso, delicadamente doce e com uma textura
+                                    envolvente, perfeito para quem aprecia sabores
+                                    suaves e marcantes, sem o amargor
+                                    característico do cacau.
                                 </p>
 
+                                <div class="product-card__footer">
+                                    <div class="product-card__bottom"></div>
 
-                               <div class="product-card__footer">
-                                  <div class="product-card__bottom">
-
-                                  </div>
-
-                                   <a
-    class="add-cart"
-    href="https://www.instagram.com/direct/t/18129300235674569/"
-    target="_blank"
-    rel="noopener noreferrer"
-    data-message="Olá! Gostaria de fazer um pedido do ATREVA Chocolate Branco."
-    aria-label="Fazer pedido do ATREVA Chocolate Branco pelo Instagram"
->
-    +
-</a>
+                                    <a
+                                        class="add-cart"
+                                        href="https://www.instagram.com/direct/t/18129300235674569/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        data-message="Olá! Gostaria de fazer um pedido do ATREVA Chocolate Branco."
+                                        aria-label="Fazer pedido do ATREVA Chocolate Branco pelo Instagram"
+                                    >+</a>
                                 </div>
 
                             </div>
-
                         </article>
 
-
-
-                        <!-- PRODUTO 03 -->
-
+                        <!-- CHOCOLATE MEIO AMARGO -->
                         <article class="product-card">
 
                             <div class="product-card__image">
-
                                 <img
-                                    src="assets/images/chocolate-03.jpeg"
-                                    alt="Chocolate artesanal ATREVA Meio Amargo"
+                                    src="./chocolate-03.jpeg"
+                                    alt="Chocolate artesanal ATREVA meio amargo"
                                     loading="lazy"
                                 >
-
 
                                 <span class="product-card__badge">
                                     Meio Amargo
                                 </span>
-
                             </div>
-
 
                             <div class="product-card__content">
 
                                 <span class="product-card__category">
-                                    Chocolate Meio Amargo com nozes, castanhas e frutas secas 
+                                    Chocolate meio amargo com nozes, castanhas e frutas secas
                                 </span>
 
-
-                                <h3>
-                                    ATREVA Meio Amargo
-                                </h3>
-
+                                <h3>ATREVA Meio Amargo</h3>
 
                                 <p>
-                                   Chocolate meio amargo com nozes, castanhas e frutas secas, em uma combinação equilibrada entre a suavidade do doce e a intensidade marcante do cacau. Uma opção sofisticada para quem aprecia um sabor mais intenso, porém equilibrado e agradável ao paladar.
+                                    Chocolate meio amargo com nozes, castanhas
+                                    e frutas secas, em uma combinação equilibrada
+                                    entre a suavidade do doce e a intensidade
+                                    marcante do cacau. Uma opção sofisticada para
+                                    quem aprecia um sabor mais intenso, porém
+                                    equilibrado e agradável ao paladar.
                                 </p>
 
-
                                 <div class="product-card__footer">
-                                    <div class="product-card__bottom">
+                                    <div class="product-card__bottom"></div>
 
-                                    </div>
-                                    
-
-                                        <a
-    class="add-cart"
-    href="https://www.instagram.com/direct/t/18129300235674569/"
-    target="_blank"
-    rel="noopener noreferrer"
-    data-message="Olá! Gostaria de fazer um pedido do ATREVA Meio Amargo."
-    aria-label="Fazer pedido do ATREVA Meio Amargo pelo Instagram"
->
-    +
-</a>
-                                    
-
+                                    <a
+                                        class="add-cart"
+                                        href="https://www.instagram.com/direct/t/18129300235674569/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        data-message="Olá! Gostaria de fazer um pedido do ATREVA Meio Amargo."
+                                        aria-label="Fazer pedido do ATREVA Meio Amargo pelo Instagram"
+                                    >+</a>
                                 </div>
 
                             </div>
-
                         </article>
 
                     </div>
-
                 </div>
-
             </section>
 
-
-
-            <!-- ========================================
-                 EXPERIÊNCIA
-            ========================================= -->
-
+            <!-- EXPERIÊNCIA -->
             <section class="experience">
-
                 <div class="container experience__container">
 
-
-                    <!-- IMAGEM -->
-
                     <div class="experience__image">
-
                         <img
-                            src="assets/images/hero-chocolate.jpeg"
+                            src="./hero-chocolate.jpeg"
                             alt="Chocolate artesanal ATREVA"
                             loading="lazy"
                         >
-
                     </div>
 
-
-
-                    <!-- TEXTO -->
-
                     <div class="experience__content">
-
-                        <span class="eyebrow">
-
-                            Uma nova experiência
-
-                        </span>
-
+                        <span class="eyebrow">Uma nova experiência</span>
 
                         <h2>
-
                             Não tenha medo
                             do <em>inesperado.</em>
-
                         </h2>
 
-
                         <p>
-
-                            A ATREVA nasceu para explorar
-                            combinações, texturas e
-                            intensidades que despertam
-                            curiosidade desde o primeiro olhar.
-
+                            A ATREVA nasceu para explorar combinações,
+                            texturas e intensidades que despertam curiosidade
+                            desde o primeiro olhar.
                         </p>
 
-
-                        <a
-                            href="#atreva"
-                            class="text-link"
-                        >
-
-                            Conheça nossa história
-
-                            <span>
-                                →
-                            </span>
-
+                        <a href="#atreva" class="text-link">
+                            Conheça nossa história <span>→</span>
                         </a>
-
                     </div>
 
                 </div>
-
             </section>
 
-
-
-            <!-- ========================================
-                 CTA
-            ========================================= -->
-
+            <!-- CHAMADA PARA AÇÃO -->
             <section class="cta">
-
                 <div class="container cta__container">
 
-                    <span class="eyebrow">
-                        Está pronto?
-                    </span>
-
+                    <span class="eyebrow">Está pronto?</span>
 
                     <h2>
-
                         Atreva-se a
-
-                        <em>
-                            provar.
-                        </em>
-
+                        <em>provar.</em>
                     </h2>
-
 
                     <a
                         href="https://www.instagram.com/direct/t/18129300235674569/"
                         class="button button--primary"
+                        target="_blank"
+                        rel="noopener noreferrer"
                     >
-
                         Quero experimentar
-
                     </a>
 
                 </div>
-
             </section>
 
-
-
-            <!-- ========================================
-                 FOOTER
-                 TAMBÉM FICA DENTRO DO VÍDEO
-            ========================================= -->
-
-            <footer
-                class="footer"
-                id="contato"
-            >
-
+            <!-- RODAPÉ -->
+            <footer class="footer" id="contato">
                 <div class="container">
 
-
-                    <!-- PARTE SUPERIOR -->
-
                     <div class="footer__top">
-
                         <div class="footer__brand">
-
-                            <span class="brand__name">
-                                ATREVA
-                            </span>
-
-
-                            <span class="brand__tagline">
-                                Atreva-se a provar
-                            </span>
-
+                            <span class="brand__name">ATREVA</span>
+                            <span class="brand__tagline">Atreva-se a provar</span>
                         </div>
-
 
                         <p>
-
-                            Para quem tem coragem
-                            de experimentar algo novo.
-
+                            Para quem tem coragem de experimentar algo novo.
                         </p>
-
                     </div>
 
-
-
-                    <!-- PARTE INFERIOR -->
-
                     <div class="footer__bottom">
-
                         <span>
-
-                            © 2026 ATREVA.
-                            Todos os direitos reservados.
-
+                            © 2026 ATREVA. Todos os direitos reservados.
                         </span>
 
-
                         <div class="footer__links">
-
                             <a
                                 href="https://www.instagram.com/atreva_seaprovar/"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 aria-label="Instagram da ATREVA"
                             >
-
                                 Instagram
-
                             </a>
-
                         </div>
-
                     </div>
 
                 </div>
-
             </footer>
 
-
         </div>
-        <!-- FIM DO VIDEO-PAGE -->
-
+        <!-- FIM DO VÍDEO CONTÍNUO -->
 
     </main>
 
-
-
-    <!-- ========================================
-         NOTIFICAÇÃO
-    ========================================= -->
-
-    <div
-        class="toast"
-        id="toast"
-        role="status"
-        aria-live="polite"
-    >
-
-        <span>
-            ✓
-        </span>
-
-        Produto adicionado.
-
+    <!-- NOTIFICAÇÃO -->
+    <div class="toast" id="toast" role="status" aria-live="polite">
+        <span>✓</span>
+        <span class="toast__text">Mensagem pronta.</span>
     </div>
 
-
-
-    <!-- ========================================
-         JAVASCRIPT
-    ========================================= -->
-
-    <script
-        src="js/main.js"
-    ></script>
-
+    <!-- JAVASCRIPT: O ARQUIVO ESTÁ NA RAIZ DO REPOSITÓRIO -->
+    <script src="./script.js" defer></script>
 
 </body>
-
 </html>
